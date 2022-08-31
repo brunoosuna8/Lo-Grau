@@ -1,0 +1,30 @@
+reviews,testimonios.gatilladores subconsientes
+medios de contacto bien marcados.mostrados.
+queremos que la pagina retrate el valor del trabajo del dentista
+h1,h2 con keyword para qaue google sepa q es un dentista y blabla
+informacion de obra social,sin obra social ?
+free tips to keey your mouth healthy
+lo mejor seria tomar fotos de pacientes antes y despues
+lo mejorq se pueda par guiar a la persona a navegar por la pagina
+crear un footer claro,es bueno para el algortmo de google.
+indtroducir al dentista un poco mejor.
+
+https://www.youtube.com/watch?v=zJLI3M6aMUc
+
+claro y accesible detalle de contacto
+evidencia social (reviews,fotos,certificados)
+marca memorable(paleta de color,mensaje,fuente)
+calido.estetica de invitacion
+
+headeer parecido a lde la pagina
+
+//h1 y h2 con imgs 100vh recepcionista,persona trabajando,y lugar,a la derecha medio de contacto wsp
+//reviews
+//antes y despues de pacientes
+
+donde encontrarnos,visitanos
+footer
+
+h1 = h2 tamanio
+h3 subtitulos y cosas
+h4 mas chiquito de todo
