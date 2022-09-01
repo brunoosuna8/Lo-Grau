@@ -5,13 +5,17 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Serif Telugu', serif;
+    color:white;
 
 }
 :root{
     --green-four: #289cbe;
     --green-three: #2fc4b2;
-    --green-light: #b2fde8;
+    --green-two: #8de5db;
+    --green-one: #b2fde8;
+    --background: #d3d1c0;
+
 }
 
 h1{
@@ -35,11 +39,12 @@ header{
     min-width: 320px;
     min-width: 100%;
     height: 70px;
-    background-color: var(--green-four);
+    background-color: var(--green-three);
     display: flex;
     justify-content: space-around;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
+    
 
 
 }
@@ -93,7 +98,8 @@ header a:hover{
     
 }
 .contact{
-    width: 320px;
+    width: fit-content;
+    padding: 0 20px;
     height: 50px;
     color: white;
     display: flex;
@@ -134,8 +140,9 @@ main {
 /*///////////////////big imgs container/////////*/
 
 .big-imgs{
+    background-color: var(--background);
     color: white;
-height: 100vh;
+    height: 100vh;
     position: relative;
     width: 100%;
     height: auto;
@@ -146,11 +153,10 @@ height: 100vh;
 .big-imgs ul {
     display: flex;
     padding: 0;
-    
     width: 400%;/*creo q genera el scroll ,son 4 imgs*/
     animation: cambio 15s infinite; /*dura 20 seg y se repite infitinas veces*/
     animation-direction:alternate ;/*cuando llega a la cuarta img vuelve a la tercera y seg..*/
-
+    
 }
 .big-imgs li{
     
@@ -158,7 +164,8 @@ height: 100vh;
     width: 100%;
 }
 .big-imgs img {
-    
+    height: 100vh;
+    object-fit: cover;
     width: 100%;
 }
 .title{
@@ -209,6 +216,7 @@ height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background);
     
 }
 .main-reviews-container h2{
@@ -225,6 +233,31 @@ height: 100vh;
     flex-direction: row;
     flex-wrap: wrap;
     
+}
+.reviews-container .review:nth-child(4){
+    background-color: #ffc440;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    color: black;
+
+
+}
+.reviews-container .review:nth-child(2){
+    background-color:#8DE5DB;
+    color: black;
+    border-top-left-radius: 0;
+
+
+}
+.reviews-container .review:nth-child(1){
+    background-color:var(--green-three);
+    border-top-right-radius: 0;
+
+}
+.reviews-container .review:nth-child(3){
+   background-color: var(--green-four);
+   border-bottom-right-radius: 0;
+   border-top-left-radius: 0;
 }
 .review{
     height: fit-content;
@@ -245,6 +278,7 @@ height: 100vh;
     height: 30px;
     border-radius: 15px;
     
+    
 }
 
 
@@ -260,7 +294,7 @@ height: 100vh;
 
 
 .location{
-    background-color: red;
+    background-color: var(--background);
     padding: 10px;
     width: 100%;
     height: auto;
@@ -271,7 +305,9 @@ height: 100vh;
     font-size: 1.5rem;
 
 }
-
+.location > div{
+     margin-top: 50px;
+}
 
 .office-photos{
     
@@ -285,11 +321,6 @@ height: 100vh;
     
 }
 
-.office-photos div{
-border: 2px solid 
-black;
-
-}
 
 .item1{
 width: 250px;
@@ -337,17 +368,31 @@ background-position: center center;
     min-width: 300px;
     max-width: 500px;
     width: 100%;
-    background-color: yellow;
-    height: 300px;
-    
-    
+    text-align: center;
+
+    /* background-color: yellow; */
 }
+.office-info .contact{
+    margin: 0 auto;
+}
+.map{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+iframe{
+    width: 100%;
+}
+
 .location-info{
+    text-align: center;
     min-width: 300px;
     max-width: 500px;
     width: 100%;
-    background-color: yellow;
-    height: 300px;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: auto;
+    padding: 10px;
 }
 .office-hours{
 
@@ -359,7 +404,7 @@ background-position: center center;
 
 .day{
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -387,11 +432,11 @@ background-position: center center;
 
 
 
-@media(max-width:770px){
+@media(max-width:1028px){
    
     .nav-right-section{
         position: relative;
-        width: 130px;
+        
         height: 100%;
         
     }
