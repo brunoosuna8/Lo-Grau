@@ -104,7 +104,7 @@ header a {
   
 
 .menu{
-    width: 1000px;
+    width: 900px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -156,9 +156,9 @@ header a {
     
 }
 .mobile-menu{
-    width: 35px;
-    height: 35px;
-    background-image: url('./img/menu-mobile.svg');
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/iconos/menu-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -210,7 +210,7 @@ main {
 .title div {
     display: flex;
     flex-direction: row;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 0;
     align-items: center;
     height: 50px;
 }
@@ -257,14 +257,14 @@ main {
     
 }
 .main-reviews-container h2{
-    margin: 40px 0;
+    margin: 60px 0;
     text-align: center;
 }
 .reviews-container{
     
-    max-width: 1080px;
-    height: auto;
+    max-width: 1300px;
     width: 100%;
+    
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -297,11 +297,12 @@ main {
    border-top-left-radius: 0;
 }
 .review{
+    
     height: fit-content;
     padding: 15px;
     border-radius: 15px;
     max-width: 400px;
-    margin: 20px 20px 0 20px ;
+    margin: 50px 20px ;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     
 }
@@ -470,8 +471,15 @@ iframe{
 
 
 
-@media(max-width:1028px){
-   
+@media(max-width:1000px){
+    header{
+        
+        
+        justify-content: space-between;
+    }
+    .nav{
+        margin: 0 40px;
+    }
     .nav-right-section{
         position: relative;
         
@@ -495,15 +503,15 @@ iframe{
         visibility:hidden;
         position: absolute;
         top: 0;
-        right: 0;
+        right: -40px;
         display: flex;
         width: auto;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         height: 100vh;
-        width: 200px;
-        background-color: var(--grey-casa);
+        width: 250px;
+        background-color: var(--green-three);
         box-shadow: 0 40px 60px rgba(0,0,0,0.2);
         
         
@@ -521,17 +529,20 @@ iframe{
     }
     .menu .close-button{
         margin: 10px;
-        opacity: 0.4;
-        background-image: url('./img/xmark-solid.svg');
+        
+        background-image: url('./img/iconos/close-botton.png');
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         width: 20px;
         height: 30px;
-        top: 3px;
-        right: 155px;
+        top: 22px;
+        right: 205px;
     }
     
+} 
+
+ 
+@media(min-width:1000px){
+    
 }
-
-
