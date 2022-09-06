@@ -28,7 +28,7 @@ h3{
     font-size: 1.9rem;
 }
 p{
-    font-size:1.5rem ;
+    font-size:2rem ;
 }
 
 header{
@@ -131,14 +131,16 @@ header a {
 .contact{
     font-size: 2rem;
     width: fit-content;
-    padding: 0 20px;
+    padding: 3px 20px 0 20px;
     height: 50px;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   border-radius: 10px;
+    border-radius: 10px;
     background-color: #ff9d12;
+    border: 1px solid white;
+    
 
 
 
@@ -170,6 +172,19 @@ main {
     
 }
 /*///////////////////big imgs container/////////*/
+.whatsapp{
+    
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    
+}
+.whatsapp img{
+    background-color: white;
+    border-radius: 55px;
+    width: 80px;
+    height: 80px;
+}
 
 .big-imgs{
     background-color: var(--background);
@@ -201,10 +216,14 @@ main {
     width: 100%;
 }
 .title{
-    top: 40%;
+    top: 50%;
     left: 10%;
     position: absolute;
     
+}
+.title h1{
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
 
 .title div {
@@ -217,12 +236,13 @@ main {
 .title h3{
     margin-left: 11px;
 }
-.title img{
+.contact img{
     width: 35px;
     height: 35px;
     border-radius: 15px;
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 1px;
+    margin: 0 15px 2px 0;
 }
 
 
@@ -265,9 +285,8 @@ main {
     
     max-width: 1300px;
     width: 100%;
-    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     
@@ -302,7 +321,7 @@ main {
     height: fit-content;
     padding: 15px;
     border-radius: 15px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px 20px ;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     
@@ -388,9 +407,17 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
 
+    .office-info > *{
+        margin-bottom: 40px;
+    }
+
+    .office-info h2 img{
+        width: 35px;
+        height: 35px;
+    }
 
 
     .location-info { 
@@ -401,6 +428,11 @@ main {
         align-items: center;
 
     }
+    .location-info h2 img{
+        
+        width: 35px;
+        height: 35px;
+    }
     .office-hours{
         width: 100%;
         height: 80%;
@@ -409,23 +441,17 @@ main {
         flex-direction: column;
         justify-content: space-around;
         padding: 10px;
-        border: 2px solid white;
+       
         border-radius: 15px;
         
     }
     .day{
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
         justify-content: space-between;
     }
    
-
-
-
-
-
-
 
     .map {
         padding: 10px;
@@ -440,44 +466,11 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*///////////////////advices section////////////////*/
 
 
 .advices{
-    
+    text-align: center;
     margin: 0 auto;
     width: 100%;
     max-width: 1500px;
@@ -487,7 +480,13 @@ main {
     justify-content: space-around;
 }
 .advices h2{
-    color: var(--green-one);
+    color: var(--green-three);
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.advices span{
+    color: white;
+    text-shadow: none;
 }
 .advice-container{
     padding: 15px;
@@ -507,14 +506,39 @@ main {
     height: 130px;
 }
 
+/*/////////////footer section ///////////////////////////*/
+footer{
+    background-color: var(--green-three);
+    width: 100%;
+    margin-top: 100px;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    line-height: 40px;
 
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer div:nth-child(1) img{
+    margin: 0 auto;
+    width: 180px;
+}
+footer div{
+   
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
 
-
-
-
-
-
-
+}
 
 
 
@@ -592,7 +616,20 @@ main {
         right: 205px;
     }
     
-
+    .location{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+    text-align: center;
+    justify-content: center;
+    }
 } 
 
  
+
+@media(max-width:450px){
+    .title{
+        left: 5%;
+    }
+}
